@@ -11,107 +11,117 @@
     <!-- fav icon link here  -->
     <link rel="shortcut icon" href="./images/logo/logo-01 1.png" type="image/x-icon">
     <!-- font awsome here  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header>
+    <!-- <header class="profile-section" >
+        <div class="search-bar">
+            <form action="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Here" >   
+            </form>
+        </div>
 
-    </header>
+        <div class="profile">
+            <img src="./images/logo/headerImage.png" alt="">
+        </div>
+
+    </header> -->
 
     <main>
-        <div class="sideber">
-            <div class="logo_content">
-                <div class="logo">
-                  <div class="logo_name">DAILY</div>
-                  <i class="fa-solid fa-globe"></i>
-                </div>
-                <i class="fa-solid fa-bars" id="btn"></i>
+        <div id="mySidepanel" class="sidepanel">
+            <div class="logo">
+                <div class="logo_name">DAILY</div>
+                <i class="fa-solid fa-globe"></i>
+                <!-- <img src="./images/logo/logo-01 1.png" alt=""> -->
             </div>
 
-            <!-- navigation here  -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"> <i class="fa-solid fa-house"></i> Home</a>
+            <a href="#"> <i class="fa-brands fa-buromobelexperte"></i> Explore</a>
+            <a href="#"> <i class="fa-solid fa-bookmark"></i> Saved</a>
+            <a href="#"> <i class="fa-solid fa-note-sticky"></i>Subscriptions</a>
+            <a href="#"> <i class="fa-solid fa-envelope"></i> Messages</a>
+            <a href="#"> <i class="fa-solid fa-gear"></i> Settings</a>
 
-            <div class="navigation">
-                <ul class="nav_list">
-
-                    <li>
-                       <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="links_name">Home</span>
-                       </a> 
-                       <!-- <span class="tooltip">Home</span>  -->
-                    </li>
-
-                    <li>
-                        <a href="#">
-                        <i class="fa-brands fa-buromobelexperte"></i> 
-                         
-                         <span class="links_name">Explore</span>
-                        </a> 
-                        <!-- <span class="tooltip">Home</span>  -->
-                     </li>
-
-
-                     <li>
-                        <a href="#">
-                         <i class="fa-solid fa-bookmark"></i>
-                         <span class="links_name">Saved</span>
-                        </a> 
-                        <!-- <span class="tooltip">Home</span>  -->
-                     </li>
-
-
-                     <li>
-                        <a href="#">
-                        <i class="fa-solid fa-note-sticky"></i>
-                         <span class="links_name">Subscriptions</span>
-                        </a> 
-                        <!-- <span class="tooltip">Home</span>  -->
-                     </li>
-
-
-                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-envelope"></i>
-                         <span class="links_name">Messages</span>
-                        </a> 
-                        <!-- <span class="tooltip">Home</span>  -->
-                     </li>
-
-                     <li>
-                        <a href="#">
-                            <i class="fa-solid fa-gear"></i>
-                         <span class="links_name">Settings</span>
-                        </a> 
-                        <!-- <span class="tooltip">Home</span>  -->
-                     </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- sideBar fire section here  -->
-            <section>
-                <div class="down-content">
-                    <div class="fire">
-                        <img src="./images/logo/fire.png" alt="fire">
-                    </div>
-                    <div class="content">
-                        <h3>Subscribe to our
-                            new plan <span class="clr">$25</span> </h3>
-
-                        <p>It is a limited time offer that will expire soon.</p>
-
-                        <button class="btn"> <span>Subscribe</span> </button>
-                    </div>
+            <hr>
+              <!-- sideBar fire section here  -->
+         <section>
+            <div class="down-content">
+                <div class="fire">
+                    <img src="./images/logo/fire.png" alt="fire">
                 </div>
-            </section>
+                <div class="content">
+                    <h3>Subscribe to our
+                        new plan <span class="clr">$25</span> </h3>
+
+                    <p>It is a limited time offer that will expire soon.</p>
+
+                    <button class="btn"> <span>Subscribe</span> </button>
+                </div>
+            </div>
+        </section>
 
         </div>
+
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button> 
+        </div>
+
+
+        <!-- explor chanels start here  -->
+
+        <section class="row-grid" >
+            <div class="container">
+                <h2>Explore Channels</h2>
+                <a href="#">See all<i class="fa-solid fa-angles-right"></i></a>
+
+            </div>
+
+            <div class="container-content">
+                <div class="small-cards">
+                    <img src="./images/Explore-channnels/01.png" alt="">
+                    <h4>FOX NEWS</h4>
+                </div>
+                    <div class="small-cards">
+                        <img src="./images/Explore-channnels/02.png" alt="">
+                        <h4>CW6 NEWS</h4>
+                    </div>
+
+                    <div class="small-cards">
+                        <img src="./images/Explore-channnels/03.png" alt="">
+                        <h4>ABC NEWS</h4>
+                    </div>
+
+
+                    <div class="small-cards">
+                        <img src="./images/Explore-channnels/04.png" alt="">
+                        <h4>AL JAZEERA</h4>
+                    </div>
+
+                    <div class="small-cards">
+                        <img src="./images/Explore-channnels/05.png" alt="">
+                        <h4>BBC NEWS</h4>
+                    </div>
+
+                    <div class="small-cards">
+                        <img src="./images/Explore-channnels/06.png" alt="">
+                        <h4>CNN NEWS</h4>
+                    </div>
+               
+            </div>
+        </section>
+       
+
     </main>
 
-    
+
+    <!-- linking with js  -->
+
+    <script src="./java-Script/index.js"></script>
 
 </body>
 
